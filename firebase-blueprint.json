@@ -1,0 +1,72 @@
+{
+  "entities": {
+    "products": {
+      "title": "Products",
+      "description": "Banana Ji product catalog items",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "bengaliName": { "type": "string" },
+        "price": { "type": "number" },
+        "originalPrice": { "type": "number" },
+        "weight": { "type": "string" },
+        "rating": { "type": "number" },
+        "reviews": { "type": "number" },
+        "category": { "type": "string" },
+        "image": { "type": "string" },
+        "badge": { "type": "string" },
+        "inStock": { "type": "boolean" },
+        "description": { "type": "string" },
+        "origin": { "type": "string" },
+        "grade": { "type": "string" }
+      },
+      "required": ["id", "name", "price"]
+    },
+    "orders": {
+      "title": "Orders",
+      "description": "Customer order records",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "customer": { "type": "object" },
+        "items": { "type": "array" },
+        "total": { "type": "number" },
+        "paymentMethod": { "type": "string" },
+        "paymentStatus": { "type": "string" },
+        "transactionId": { "type": "string" },
+        "senderNumber": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "total"]
+    },
+    "site_content": {
+      "title": "Site Content",
+      "description": "Live editor site changes and customization state",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "htmlSnapshot": { "type": "string" },
+        "textReplacements": { "type": "object" },
+        "themeConfig": { "type": "object" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "users": {
+      "title": "Users",
+      "description": "User profile records containing account details and preferences",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "providerId": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email"]
+    }
+  }
+}

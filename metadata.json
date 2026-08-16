@@ -1,0 +1,9 @@
+{
+  "name": "Banana Ji",
+  "description": "Boutique emporium for fresh unripe green bananas, resistant starch superfoods, and artisanal treats with master admin panel, hero banner & blog manager, customer orders feed with Cash on Delivery and bKash/Nagad TrxID verification, and Firebase Firestore persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+
